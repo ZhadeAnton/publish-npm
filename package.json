@@ -1,0 +1,35 @@
+{
+  "name": "@zhade/publish-npm",
+  "author": "zhade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "np",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=14.17"
+  },
+  "files": [
+    "./dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "np": {
+    "yarn": false,
+    "contents": "dist"
+  },
+  "devDependencies": {
+    "np": "*"
+  }
+}
