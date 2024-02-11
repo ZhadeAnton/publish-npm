@@ -1,5 +1,6 @@
 {
   "name": "@zhade/publish-npm",
+  "repository": "https://github.com/ZhadeAnton/publish-npm",
   "author": "zhade",
   "version": "1.0.1",
   "description": "",
@@ -24,9 +25,5 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  },
-  "np": {
-    "yarn": false,
-    "contents": "dist"
   }
 }
